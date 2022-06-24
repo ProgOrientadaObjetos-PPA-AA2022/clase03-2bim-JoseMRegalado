@@ -5,52 +5,50 @@
  */
 package herencia2;
 
-
 /**
  *
  * @author reroes
  */
 public class Persona {
-    
+
     protected String nombre;
     protected String apellido;
     protected int edad;
-    
-    public Persona(String n, String a,  int e){
+
+    public Persona(String n, String a, int e) {
         setNombre(n);
         setApellido(a);
         setEdad(e);
     }
-    
-    public void setNombre(String n){
+
+    public void setNombre(String n) {
         nombre = n;
     }
-    
-    public void setApellido(String n){
+
+    public void setApellido(String n) {
         apellido = n;
     }
-    
-    public void setEdad(int n){
+
+    public void setEdad(int n) {
         edad = n;
     }
-    
-    public int getEdad(){
+
+    public int getEdad() {
         return edad;
     }
-    
-    public String getNombre(){
+
+    public String getNombre() {
         return nombre;
     }
-    
-    public String getApellido(){
+
+    public String getApellido() {
         return apellido;
     }
-    
+
     @Override
-    public String toString(){
-        return String.format("Nombre: %s - Apellido %s - Edad %d", 
+    public String toString() {
+        return String.format("Nombre: %s - Apellido %s - Edad %d",
                 getNombre(), getApellido(), getEdad());
     }
-    
-    
+
 }
